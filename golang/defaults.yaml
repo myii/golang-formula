@@ -3,7 +3,7 @@
 ---
 golang:
   version: '1.10.1'
-  go_path: /usr/local/golang/packages   ##non-default GOPATH
+  go_path: /usr/local/golang/packages   # non-default GOPATH
   rootuser: root
   rootgroup: root
 
@@ -38,4 +38,4 @@ golang:
     altpriority: 0
     # for linux alternatives only
     base_dir: ''
-    dir: /usr/local/go        ##go_root
+    dir: /usr/local/go        # go_root
