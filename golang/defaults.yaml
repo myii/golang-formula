@@ -22,7 +22,6 @@ golang:
       enforce_toplevel: true
     repo: {}
 
-  rootgroup: root
   # Provided in `map.jinja` via. `grains.kernel`
   kernel: ''
   config: '/etc/golang'
@@ -38,5 +37,5 @@ golang:
     # 'Alternatives system' priority: zero disables (default)
     altpriority: 0
     # for linux alternatives only
-    base_dir: ''        ## go_root
-    dir: /usr/local/go
+    base_dir: ''
+    dir: /usr/local/go        ##go_root
