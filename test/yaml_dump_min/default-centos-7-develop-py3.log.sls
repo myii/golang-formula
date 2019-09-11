@@ -3,16 +3,16 @@ added_in_defaults: defaults_value
 added_in_lookup: lookup_value
 added_in_pillar: pillar_value
 arch: amd64
-base_dir: /usr/local/go1.10.1.linux-amd64
 config: /etc/golang
-dir: /usr/local/go
 environ:
-- export PATH=${PATH}:/usr/local/go1.10.1.linux-amd64
+- export PATH=${PATH}:/usr/local/go1.10.1.linux-amd64/go/bin
 environ_file: /etc/default/golang.sh
 go_path: /usr/local/golang/packages
 kernel: linux
 linux:
   altpriority: 1000
+  base_dir: /usr/local/go1.10.1.linux-amd64
+  dir: /usr/local/go
 lookup:
   master: golang-master
   winner: lookup
@@ -33,6 +33,7 @@ pkg:
   use_upstream_archive: true
   use_upstream_repo: false
 rootgroup: root
+rootuser: root
 service:
   name: golang
 tofs:
