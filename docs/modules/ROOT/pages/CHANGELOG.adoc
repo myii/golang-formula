@@ -1,0 +1,340 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.7.4...v0.7.5++[0.7.5^] (2021-04-01)
+
+=== Bug Fixes
+
+* move non-state entries under a new `archive_helper` key
+(https://github.com/saltstack-formulas/golang-formula/commit/1b7b265c0b69d52a9ae51946082c16ff4b2d7da9[1b7b265^])
+* *bsd:* use correct package and fix `package` suite tests
+(https://github.com/saltstack-formulas/golang-formula/commit/17e763fbb258251224759c926d40b70564e25e55[17e763f^])
+* *freebsd:* ensure `git` is installed and `default` tests pass
+(https://github.com/saltstack-formulas/golang-formula/commit/f6f009b350518edc6e1feeac71d6cfbb92cc8d08[f6f009b^])
+* *windows:* get states working on windows
+(https://github.com/saltstack-formulas/golang-formula/commit/1a22291cf2623816fb3cac6b77a8e4472d47978e[1a22291^])
+* *windows:* no arch grain in windows 10
+(https://github.com/saltstack-formulas/golang-formula/commit/5d5538e9ad72115a59002965cfd8cf8a03c74d5a[5d5538e^])
+
+=== Continuous Integration
+
+* enable Vagrant-based testing using GitHub Actions
+(https://github.com/saltstack-formulas/golang-formula/commit/a2cb899ad0d36b9cdc1ba610a26c485e3356ae67[a2cb899^])
+* *commitlint:* ensure `upstream/master` uses main repo URL [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/bb5b061b6b11a438b16fbff4b7b0274c88200787[bb5b061^])
+* *gemfile+lock:* use `ssf` customised `kitchen-docker` repo [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/f16be5f7f94d666d7acb8b12fc88466c3004283e[f16be5f^])
+* *gitlab-ci:* add `rubocop` linter (with `allow_failure`) [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/431085de8a37c61d7f49985bbb669e6a650ed067[431085d^])
+* *kitchen+ci:* use latest pre-salted images (after CVE) [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/8bdbbec25ccf35a9c02d338929177da36808fb36[8bdbbec^])
+* *kitchen+gitlab-ci:* use latest pre-salted images [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/53cf96374ee695afe81ca60edc77a2a9bdeb1060[53cf963^])
+* *pre-commit:* update hook for `rubocop` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/7384c81ac4263bdb2c9c2f619e14194895240eee[7384c81^])
+
+=== Tests
+
+* *windows:* update for `default` suite
+(https://github.com/saltstack-formulas/golang-formula/commit/3f76b2549151f9979054d570f64103f795a4533a[3f76b25^])
+* *windows:* update for `package` suite
+(https://github.com/saltstack-formulas/golang-formula/commit/ab8b117aeb99c7512d81e0148e9cac609d712528[ab8b117^])
+* standardise use of `share` suite & `_mapdata` state [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/43b3b932a22dc2bf26e1f23642741d7c6d2931ce[43b3b93^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.7.3...v0.7.4++[0.7.4^] (2020-12-16)
+
+=== Continuous Integration
+
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/golang-formula/commit/231b3d78d54add40d75b33030af7221cfe7da159[231b3d7^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/9ed768930e8b13ae69f64ca608845a8593caf214[9ed7689^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/412249d76d1ae448b40943322342a1207acb0f8f[412249d^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/e7fc87265fc109db23a5d2ab7b9bd8520259718d[e7fc872^])
+
+=== Styles
+
+* *libtofs.jinja:* use Black-inspired Jinja formatting [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/95722127eb64a5f0192f89a80c1f15bed76743ac[9572212^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.7.2...v0.7.3++[0.7.3^] (2020-06-17)
+
+=== Bug Fixes
+
+* *symlink:* remove space
+(https://github.com/saltstack-formulas/golang-formula/commit/3db8a9908141c635ffb254a7b8541a4b40d1f28c[3db8a99^])
+
+=== Code Refactoring
+
+* *symlink:* remove duplicated symlinking code
+(https://github.com/saltstack-formulas/golang-formula/commit/c0e4a558967e3617411c2a7055c8f8b484ab2d49[c0e4a55^])
+
+=== Continuous Integration
+
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/bf44069956b3f9c611b207dc7831fa5a39bab89e[bf44069^])
+
+=== Documentation
+
+* *readme:* set depth one
+(https://github.com/saltstack-formulas/golang-formula/commit/6d6d0d17865ac8d69f91d60c2e8a8725ac93b04c[6d6d0d1^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.7.1...v0.7.2++[0.7.2^] (2020-06-05)
+
+=== Bug Fixes
+
+* *defaults:* ensure `path` is set (for package-based installation)
+(https://github.com/saltstack-formulas/golang-formula/commit/e7e088bcaf38bc01ccbcd040cc87d1101aae013b[e7e088b^])
+* *pkg:* use correct package name per `osfamily`
+(https://github.com/saltstack-formulas/golang-formula/commit/2677e840d1ca41c410b2ac1e8870357f779e1814[2677e84^])
+* *repo:* fix relative includes cannot be used for `sls` requisites
+(https://github.com/saltstack-formulas/golang-formula/commit/6049382287898564e85d073a1d41ae4daff401b1[6049382^]),
+closes
+https://github.com/saltstack-formulas/golang-formula/issues/41[#41^]
+
+=== Continuous Integration
+
+* *kitchen+travis+inspec:* add `package` suite
+(https://github.com/saltstack-formulas/golang-formula/commit/aba6e4cd7936ed8180e1d6b6dd7afea7d684b1b3[aba6e4c^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.7.0...v0.7.1++[0.7.1^] (2020-06-04)
+
+=== Documentation
+
+* *readme:* fix leader sentence
+(https://github.com/saltstack-formulas/golang-formula/commit/aa41de2cea0acfcb31feffefe122914ffd026b2a[aa41de2^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.6.5...v0.7.0++[0.7.0^] (2020-06-03)
+
+=== Code Refactoring
+
+* *ci:* move superfluous ruby file
+(https://github.com/saltstack-formulas/golang-formula/commit/3df2daac7a579c1bd082d887e95d3f8f011e1fd6[3df2daa^])
+
+=== Continuous Integration
+
+* *kitchen+travis:* use latest pre-salted images
+(https://github.com/saltstack-formulas/golang-formula/commit/ed4561457bd4dc450fe2637d9f5e9dcb92031444[ed45614^])
+
+=== Features
+
+* *macos:* support for homebrew
+(https://github.com/saltstack-formulas/golang-formula/commit/8a9b3806ef1c147bf84247b0649f00e41c1f4f96[8a9b380^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.6.4...v0.6.5++[0.6.5^] (2020-05-21)
+
+=== Bug Fixes
+
+* *config:* godoc command not in go1.14
+(https://github.com/saltstack-formulas/golang-formula/commit/97e3f3ac1586b8d81a6b0130c10431abc9d428f9[97e3f3a^])
+
+=== Continuous Integration
+
+* *tests:* fix and simplify tests
+(https://github.com/saltstack-formulas/golang-formula/commit/e4fb4340b95a4c5866d75cb593ae17acd92ddfa3[e4fb434^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.6.3...v0.6.4++[0.6.4^] (2020-05-21)
+
+=== Bug Fixes
+
+* *cmd:* only run go cmd if go cmd found
+(https://github.com/saltstack-formulas/golang-formula/commit/142f89dede5cf66539f60641fb62df6bdff72f07[142f89d^])
+
+=== Continuous Integration
+
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/f776591e3f1b689c9f93e03394e9d88e04645320[f776591^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/2dd532a96de0732c9731c33c9bc5b0dca334eb78[2dd532a^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/01fa4d1dd1277843932019a966d253bcd381a2a7[01fa4d1^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/a2a2d7d4d7017e73ac9040b6c7b6d572427a0066[a2a2d7d^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.6.2...v0.6.3++[0.6.3^] (2020-03-28)
+
+=== Bug Fixes
+
+* *hardcoding:* configurable user/group
+(https://github.com/saltstack-formulas/golang-formula/commit/1f03949d8c66148ebba995f45f14a8837f454281[1f03949^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.6.1...v0.6.2++[0.6.2^] (2020-03-19)
+
+=== Bug Fixes
+
+* *alternatives:* better no alternatives support
+(https://github.com/saltstack-formulas/golang-formula/commit/04caf8eac0bb15e4a113a73fa3c54b97b341724a[04caf8e^])
+* *libtofs:* “files_switch” mess up the variable exported by “map.jinja”
+ [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/e38ff4b13f612b08c64089cf0bf84ade44f433d5[e38ff4b^])
+
+=== Continuous Integration
+
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/959cc561d42539d3cf654010cff9eb77056d4261[959cc56^])
+
+=== Tests
+
+* *rubucop:* fix rubo issues
+(https://github.com/saltstack-formulas/golang-formula/commit/ccc1f072994e376904634c272335fccee2b9082b[ccc1f07^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.6.0...v0.6.1++[0.6.1^] (2020-01-26)
+
+=== Bug Fixes
+
+* *gemfile:* restore content inadvertently removed
+(https://github.com/saltstack-formulas/golang-formula/commit/5bb9f41c248f3b4200be236328d00e54ea834c33[5bb9f41^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.5.0...v0.6.0++[0.6.0^] (2020-01-25)
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/75002412d5dd1ebe533e84e27506bf850218c146[7500241^])
+* *travis:* opt-in to `dpl v2` to complete build config validation [skip
+ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/a9f769262b4d5e9d5a0d03acce2a91e55720e1b3[a9f7692^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/58507a15e8229f691a5867ba6e1c3401bc36ef42[58507a1^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/1888009847005c12edbad044c3bd99be4c0e8c47[1888009^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/beec7fc37e6507dcda27ed35cd9cca5bb6c01f64[beec7fc^])
+
+=== Documentation
+
+* *readme:* clarify gopath and goroot
+(https://github.com/saltstack-formulas/golang-formula/commit/22c320eb9819259bb92577889a525cd922441825[22c320e^])
+
+=== Features
+
+* *alternatives,macos:* better msupport
+(https://github.com/saltstack-formulas/golang-formula/commit/6d3286d135aebbb15e815569f66bc885147cb428[6d3286d^])
+
+=== Tests
+
+* *env:* update paths
+(https://github.com/saltstack-formulas/golang-formula/commit/69157892927eb2a2d0301fbf09c93f7cb9298546[6915789^])
+* *rubo:* fix some lint errors
+(https://github.com/saltstack-formulas/golang-formula/commit/a0c49f31d6dd896ab5eb7e3ea30a3c06692c745e[a0c49f3^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.4.1...v0.5.0++[0.5.0^] (2019-11-18)
+
+=== Bug Fixes
+
+* *lint:* remove trailing whitespace
+(https://github.com/saltstack-formulas/golang-formula/commit/376ae120e51ea5a999bd08b2a1fbc63fbaa4fb71[376ae12^])
+* *release.config.js:* use full commit hash in commit link [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/1ad448c5826b1c94aadf8b6505534cb823ba454d[1ad448c^])
+
+=== Continuous Integration
+
+* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/abb585a25dcdd25ae502bfcd0bfe2ad70e1b8963[abb585a^])
+* *kitchen:* use `develop` image until `master` is ready (`amazonlinux`)
+ [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/fef6a02c650c06a3525f63d76758826632504ee6[fef6a02^])
+* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/482a5cf341beadadbddf5b44655bc584f9bc85c8[482a5cf^])
+* *travis:* apply changes from build config validation [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/11a27e2bb98e010830144fa2c99a583576fe0eb5[11a27e2^])
+* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/f338411dd882e0440989376bf3990ae8ee6dd436[f338411^])
+* *travis:* use build config validation (beta) [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/ecbb8503ffb586945fc87d1ccda4188e59582017[ecbb850^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/golang-formula/commit/3423c80004190e433926a4a172cecd66cc435828[3423c80^])
+
+=== Documentation
+
+* *contributing:* remove to use org-level file instead [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/1501bc443ef0d0ef7603d78c30d020f4e48c2a87[1501bc4^])
+* *readme:* update link to `CONTRIBUTING` [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/8dd11925e183a88c28b73d6a6a2eea20a30d4af1[8dd1192^])
+
+=== Features
+
+* *go.cmd:* basic go command support
+(https://github.com/saltstack-formulas/golang-formula/commit/34653d51d6065204bd175f5fcfb91f845ef52bca[34653d5^])
+
+=== Performance Improvements
+
+* *travis:* improve `salt-lint` invocation [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/3e1c574d691028e220e9c628a20dbf549a0d1c7a[3e1c574^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.4.0...v0.4.1++[0.4.1^] (2019-10-10)
+
+=== Bug Fixes
+
+* *install.sls:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/golang-formula/commit/4193037[4193037^])
+* *install.sls:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/golang-formula/commit/c23bce9[c23bce9^])
+
+=== Continuous Integration
+
+* *kitchen:* change `log_level` to `debug` instead of `info`
+(https://github.com/saltstack-formulas/golang-formula/commit/793fd34[793fd34^])
+* *kitchen:* install required packages to bootstrapped `opensuse` [skip
+ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/faad94f[faad94f^])
+* *kitchen:* use bootstrapped `opensuse` images until `2019.2.2` [skip
+ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/2cdbe09[2cdbe09^])
+* *kitchen+travis:* replace EOL pre-salted images
+(https://github.com/saltstack-formulas/golang-formula/commit/b0ee510[b0ee510^])
+* *platform:* add `arch-base-latest` (commented out for now) [skip ci]
+(https://github.com/saltstack-formulas/golang-formula/commit/bbf9fa1[bbf9fa1^])
+* *yamllint:* add rule `empty-values` & use new `yaml-files` setting
+(https://github.com/saltstack-formulas/golang-formula/commit/fa990a9[fa990a9^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/golang-formula/commit/2ab9c36[2ab9c36^])
+* use `dist: bionic` & apply `opensuse-leap-15` SCP error workaround
+(https://github.com/saltstack-formulas/golang-formula/commit/0977f1f[0977f1f^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.3.3...v0.4.0++[0.4.0^] (2019-08-17)
+
+=== Features
+
+* *yamllint:* include for this repo and apply rules throughout
+(https://github.com/saltstack-formulas/golang-formula/commit/76262f8[76262f8^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.3.2...v0.3.3++[0.3.3^] (2019-07-23)
+
+=== Bug Fixes
+
+* *archives_spec:* check `sha256sum` for correct file
+(https://github.com/saltstack-formulas/golang-formula/commit/99aa62e[99aa62e^])
+* *archives_spec:* remove colon from `tag:`
+(https://github.com/saltstack-formulas/golang-formula/commit/57d445c[57d445c^])
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.3.1...v0.3.2++[0.3.2^] (2019-06-28)
+
+=== Bug Fixes
+
+* *``semantic-release``:* finalise changes from `template-formula`
+(https://github.com/saltstack-formulas/golang-formula/commit/a38392d[a38392d^]),
+closes
+https://github.com/saltstack-formulas/golang-formula/issues/20[#20^]
+
+== link:++https://github.com/saltstack-formulas/golang-formula/compare/v0.3.0...v0.3.1++[0.3.1^] (2019-06-25)
+
+=== Bug Fixes
+
+* *clean:* check for alternative before calling remove
+(https://github.com/saltstack-formulas/golang-formula/commit/3b75421[3b75421^])
+* *init:* remove rebase comment
+(https://github.com/saltstack-formulas/golang-formula/commit/c76d7cd[c76d7cd^])
+* *source_hash:* remove unused 'source_hash' consant
+(https://github.com/saltstack-formulas/golang-formula/commit/a12c5f7[a12c5f7^])
+
+=== Tests
+
+* *fixes:* fix two kitchen test failures
+(https://github.com/saltstack-formulas/golang-formula/commit/b01a5d4[b01a5d4^])
+* *inspec:* add golang archive unittests
+(https://github.com/saltstack-formulas/golang-formula/commit/6feafa9[6feafa9^])
